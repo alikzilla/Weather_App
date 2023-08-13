@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(16px + 0.5vw);
+    color: black;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    font-size: calc(30px + 0.5vw);
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block{
+    width: 400px;
+    height: 500px;
+	background: forestgreen;
+    border-radius: 10px;
+}
+
+.info{
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
+    padding: 1em;
+	display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.city{
+    display: flex;
+    justify-content: center;
+	font-size: calc(50px + 0.5vw);
+    color: white;
+}
+
+.text{
+    color: white;
+    font-size: calc(20px + 0.5vw);
+}
+
+.controls {
+    width: 100%;
+}
+
+.input-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.controls input {
+    flex: 1; /* Input field takes available space */
+    width: 200px;
+    height: 50px;
+    padding-left: 5px;
+}
+
+.controls button {
+    flex: 0; /* Button does not expand */
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: green;
+}
+
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+footer nav a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer nav a:hover{
+    text-decoration: underline;
+}
+
